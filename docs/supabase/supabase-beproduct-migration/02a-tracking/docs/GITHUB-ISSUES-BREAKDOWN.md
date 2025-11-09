@@ -1,8 +1,23 @@
 # Phase 02a-Tracking: GitHub Issues Breakdown
 
 **Purpose**: Translate deployment checklist into trackable GitHub issues  
-**Status**: Ready to create issues  
-**Date**: November 9, 2025
+**Status**: ⚠️ NEEDS REVISION - See Review Document  
+**Date**: November 9, 2025  
+**Last Reviewed**: November 9, 2025
+
+---
+
+## ⚠️ IMPORTANT: Review Required
+
+**A comprehensive review has identified gaps in this proposal.**
+
+**See:** [GITHUB-ISSUES-REVIEW.md](./GITHUB-ISSUES-REVIEW.md) for:
+- Missing API endpoint issues (4 new issues needed)
+- Schema reference corrections (ops → tracking)
+- Revised issue sequence and priorities
+- Complete timeline and dependencies
+
+**Action Required:** Review the updated proposal before creating issues.
 
 ---
 
