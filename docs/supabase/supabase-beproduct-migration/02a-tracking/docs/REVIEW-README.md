@@ -34,7 +34,23 @@
 
 ---
 
-### 3. Original Issues (NEEDS UPDATE)
+### 3. Additional Endpoints Analysis (🆕 NEW)
+**File:** [ADDITIONAL-ENDPOINTS-ANALYSIS.md](./ADDITIONAL-ENDPOINTS-ANALYSIS.md)
+
+**Analysis of 8 additional endpoints** from 02-timeline docs:
+- Style-level progress/health tracking
+- Critical path calculation for Gantt charts
+- Timeline dependencies query
+- Audit log and change history
+- Advanced assignment/sharing management
+
+**Recommendation:** Phase 2 issues (5 endpoints) + 3 to consider for Phase 1
+
+**Audience:** Product managers, backend team, frontend team
+
+---
+
+### 4. Original Issues (NEEDS UPDATE)
 **File:** [GITHUB-ISSUES-BREAKDOWN.md](./GITHUB-ISSUES-BREAKDOWN.md)
 
 Original proposed issues - **now marked for revision**
