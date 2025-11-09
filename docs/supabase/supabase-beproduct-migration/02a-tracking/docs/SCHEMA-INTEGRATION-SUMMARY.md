@@ -125,24 +125,37 @@ From `lib/tracking-api-client.ts` (21 functions):
 
 ## Impact on Proposed GitHub Issues
 
-### Issue #0A: Enable CRUD via PostgREST ✅ STILL VALID
+### Issue #0A: Enable CRUD via PostgREST ✅ VALID (with phased approach)
 
-**Status:** Correct approach, needs schema updates
+**Status:** Correct approach, split into Phase 1a (read) and Phase 1b/2 (write)
+
+**Phase 1a - Read Operations Only:**
+- Grant SELECT on tracking tables
+- Enable RLS with read-only policies
+- Document read patterns
+- **Defer writes** - users update BeProduct → webhook → Supabase
+
+**Phase 1b/2 - Write Operations:**
+- Grant INSERT, UPDATE, DELETE
+- Create reverse sync edge function (Issue #0F)
+- Enable bidirectional sync
+
+**Architectural Decision (from @ChrisKalathas):**
+> "Devs will update BeProduct using the BeProduct API and we'll get response from webhook plus edge function to update Supabase. Either late phase 1 or phase 2 we will work on updating Supabase first (easier API) then trigger BeProduct update via API but leave webhook plus edge function in place as some timeline events can only be updated in BeProduct."
+
+**Why Phased:**
+1. BeProduct is source of truth
+2. Some timeline events ONLY updatable in BeProduct
+3. Webhook infrastructure already built
+4. Lower risk to start with read-only
+5. Reverse sync adds complexity (handle conflicts, validation)
 
 **Updates Needed:**
-- Schema is `tracking` not `ops` ✅ (already noted)
+- Split into two issues: #0A-Part1 (read) and #0A-Part2 (write)
 - Add all 30+ columns to documentation
 - Include enum types in migration
 - Document JSONB fields (shared_with, raw_payload)
-
-**Additional Grant Statements:**
-```sql
--- Grant on enum types
-GRANT USAGE ON TYPE department_enum TO authenticated;
-GRANT USAGE ON TYPE phase_enum TO authenticated;
-GRANT USAGE ON TYPE relationship_type_enum TO authenticated;
-GRANT USAGE ON TYPE offset_unit_enum TO authenticated;
-```
+- **Document BeProduct-first update flow**
 
 ---
 
@@ -238,22 +251,55 @@ From our `ADDITIONAL-ENDPOINTS-ANALYSIS.md`:
 
 ---
 
+### Issue #0F: Reverse Sync Edge Function (Phase 1b/2)
+
+**Priority:** 🟡 HIGH (deferred to late Phase 1 or Phase 2)
+
+**Purpose:** Enable Supabase → BeProduct sync for write operations
+
+**Architectural Context:**
+- Phase 1a: Developers update BeProduct → webhook → Supabase
+- Phase 1b/2: Developers update Supabase → reverse sync → BeProduct
+- Webhook remains active for validation and BeProduct-only operations
+
+**Tasks:**
+1. Create edge function for reverse sync
+2. Implement conflict resolution (last-write-wins)
+3. Add validation before syncing to BeProduct
+4. Log all sync operations
+5. Handle webhook confirmation
+
+**Deliverables:**
+- `supabase/functions/tracking-reverse-sync/index.ts`
+- Conflict resolution strategy
+- Sync status logging
+- Documentation
+
+**Dependencies:**
+- Issue #0A Part 2 (write permissions)
+- Webhook deployment complete
+
+See `TIMELINE-UPDATE-STRATEGY.md` for full details.
+
+---
+
 ## Revised Issue Sequence
 
-### Phase 1 (Week 1):
+### Phase 1a (Week 1-2): Read Operations + Webhook Sync
 
 **0E: Validate Existing Functions** (1 day) 🆕
 - Use MCP to test all 21 functions
 - Identify what works vs what's broken
 - Prerequisite for all other work
 
-**0A: Enable CRUD via PostgREST** (1 day)
-- Update with correct schema (tracking)
-- Add enum type grants
-- Include all 30+ columns
+**0A Part 1: Enable READ via PostgREST** (1 day) 🔄 REVISED
+- Grant SELECT only (not INSERT/UPDATE/DELETE yet)
+- Enable RLS with read-only policies
+- Document BeProduct-first update flow
+- Updates to Issue #0A: Split into Part 1 (read) and Part 2 (write)
 
 **0B: Progress Edge Functions** (1-2 days)
-- Server-side aggregation
+- Server-side aggregation (read-only)
 - Note existing client-side functions
 - Focus on performance optimization
 
@@ -261,12 +307,37 @@ From our `ADDITIONAL-ENDPOINTS-ANALYSIS.md`:
 - Already exists as `bulkUpdateTimelines()`
 - Document in 0D instead
 
-**0D: API Documentation** (5 days)
-- Document all 30+ columns
+**0D Part 1: API Documentation - Read Operations** (3 days) 🔄 REVISED
+- Document all 30+ columns (read operations)
 - Include enum definitions
 - Add JSONB type examples
-- Migration guide for status values
+- **Document BeProduct → webhook → Supabase update flow**
 - Document existing 21 functions
+- Defer write operation documentation to Part 2
+
+### Phase 1b/2 (Week 3-4): Write Operations + Reverse Sync
+
+**0A Part 2: Enable WRITE via PostgREST** (1 day) 🆕
+- Grant INSERT, UPDATE, DELETE
+- Enable RLS with write policies
+- Add validation rules
+
+**0F: Reverse Sync Edge Function** (3-5 days) 🆕
+- Create Supabase → BeProduct sync
+- Implement conflict resolution
+- Add validation and logging
+- See `TIMELINE-UPDATE-STRATEGY.md`
+
+**0D Part 2: API Documentation - Write Operations** (2 days) 🆕
+- Document write patterns
+- Add reverse sync flow
+- Include conflict resolution
+- Troubleshooting guide
+
+### Webhook Deployment (Week 2, Parallel with Phase 1a)
+- Issues #1-13 from original proposal
+- Deploy beproduct-tracking-webhook
+- Real-time BeProduct → Supabase sync
 
 ### Phase 2 (Post-Migration):
 
