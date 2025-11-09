@@ -1,0 +1,5 @@
+# Supabase Configuration
+# https://supabase.com/docs/guides/cli/config
+
+[functions.beproduct-webhook]
+verify_jwt = false

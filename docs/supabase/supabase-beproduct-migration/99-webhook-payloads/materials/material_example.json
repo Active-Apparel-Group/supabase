@@ -1,0 +1,370 @@
+{
+  "tags": null,
+  "notes": {
+    "name": "Notes | 注释",
+    "type": "Memo",
+    "value": null,
+    "required": false
+  },
+  "status": {
+    "name": "Status | 状态",
+    "type": "DropDown",
+    "value": null,
+    "required": false
+  },
+  "brand_1": {
+    "name": "Brand | 品牌",
+    "type": "DropDown",
+    "value": "AAG CORE",
+    "required": true
+  },
+  "planIds": [
+    "04188ede-f12f-4c8f-aad3-ca342a7adf47",
+    "fcb37c8a-c86e-4d39-8a5a-986f6b0bc6d2",
+    "7b99c395-c9aa-464c-b1db-4ea9e4848e00",
+    "a37e0739-0899-4711-8828-6b28b8c0d212",
+    "162eedf3-0230-4e4c-88e1-6db332e3707b",
+    "03accce8-ce7d-4c12-8791-ec211dd2f02e",
+    "a1c0a21e-7cb3-4695-9b54-6d145da1afba",
+    "d40257e7-05c6-40cd-9ffd-c5c0a058f78f"
+  ],
+  "leadtime": {
+    "name": "Lead Time | 交货时间",
+    "type": "Number",
+    "value": 30,
+    "required": false
+  },
+  "modified": {
+    "name": "Modified",
+    "type": "LabelText",
+    "value": "Natalie.James @ 11/04/2025 05:29:01",
+    "required": false
+  },
+  "supplier": {
+    "name": "Factory | 供应商",
+    "type": "PartnerDropDown",
+    "value": {
+      "code": "8bdb1419-dceb-4e45-8809-487004caa13e",
+      "text": null,
+      "value": "CARVICO",
+      "allowedFor": null
+    },
+    "required": false
+  },
+  "colorways": [
+    {
+      "id": "934ed0dc-8fc6-48b3-a8b8-cdb86dfb5f95",
+      "image": "https://hk-stream2.beproduct.com/preview/0ea6759e-1240-4608-bcc0-da76565ced21/60f27b87-9075-4510-ad72-a0b32559a682/1/0/preview.jpg?width=1000",
+      "fields": {
+        "brand_1": "GREYSON",
+        "marketing_name": null,
+        "color_number_ls": null,
+        "color_reference": null,
+        "secondary_color_name": "",
+        "core_colorway_comments": "",
+        "secondary_color_number": "",
+        "core_colorway_main_material": null
+      },
+      "comments": "",
+      "colorName": "WNS057 COLOR",
+      "colorNumber": "WNS057",
+      "hideColorway": false,
+      "primaryColor": "",
+      "colorSourceId": null,
+      "imageHeaderId": null,
+      "secondaryColor": "",
+      "secondaryColorName": "",
+      "secondaryColorNumber": ""
+    },
+    {
+      "id": "bae503da-eadb-4521-bbd6-05dfa05a7886",
+      "image": null,
+      "fields": {
+        "brand_1": "GREYSON",
+        "marketing_name": "220 - GROVE",
+        "color_number_ls": "4260 直布罗陀海蓝色",
+        "color_reference": "19-4038 TCX",
+        "secondary_color_name": "",
+        "core_colorway_comments": "",
+        "secondary_color_number": "",
+        "core_colorway_main_material": null
+      },
+      "comments": "",
+      "colorName": "Gibraltar Sea",
+      "colorNumber": "19-4038 TCX",
+      "hideColorway": false,
+      "primaryColor": "133951",
+      "colorSourceId": null,
+      "imageHeaderId": null,
+      "secondaryColor": "",
+      "secondaryColorName": "",
+      "secondaryColorNumber": ""
+    },
+    {
+      "id": "2225f3fa-f0f3-4a27-8fa0-0170c0f1e019",
+      "image": null,
+      "fields": {
+        "brand_1": "GREYSON",
+        "marketing_name": "359 - PINK SKY",
+        "color_number_ls": "2761 粉艋13-3207TCX",
+        "color_reference": null,
+        "secondary_color_name": "",
+        "core_colorway_comments": "",
+        "secondary_color_number": "",
+        "core_colorway_main_material": null
+      },
+      "comments": "",
+      "colorName": "Cherry Blossom",
+      "colorNumber": "13-3207 TCX",
+      "hideColorway": false,
+      "primaryColor": "f7cfe1",
+      "colorSourceId": null,
+      "imageHeaderId": null,
+      "secondaryColor": "",
+      "secondaryColorName": "",
+      "secondaryColorNumber": ""
+    },
+    {
+      "id": "a62a8b27-e085-4b05-8242-ac194b3c39ee",
+      "image": null,
+      "fields": {
+        "brand_1": "GREYSON",
+        "marketing_name": null,
+        "color_number_ls": "2815 果酒红19-2620TCX",
+        "color_reference": null,
+        "secondary_color_name": "",
+        "core_colorway_comments": "",
+        "secondary_color_number": "",
+        "core_colorway_main_material": null
+      },
+      "comments": "",
+      "colorName": "947 - ZION",
+      "colorNumber": "19-2620 TCX",
+      "hideColorway": false,
+      "primaryColor": "47253c",
+      "colorSourceId": null,
+      "imageHeaderId": null,
+      "secondaryColor": "",
+      "secondaryColorName": "",
+      "secondaryColorNumber": ""
+    }
+  ],
+  "createdAt": "2021-10-18T17:38:10.274Z",
+  "createdBy": {
+    "id": "ace65e9d-a533-4141-b84e-45d07033b244",
+    "name": "Natalie.James"
+  },
+  "isDeleted": false,
+  "lead_time": {
+    "name": "Lead Time | 交货时间",
+    "type": "Text",
+    "value": "30",
+    "required": false
+  },
+  "mainImage": {
+    "origin": "https://hk-cdn.beproduct.com/storage/0ea6759e-1240-4608-bcc0-da76565ced21/02fe52e8-f800-42f8-be55-ee1c56722a9b/1/wns057%20-%20408%20revolution%20energy%20-%20wns057.png?skoid=c5dc1fcd-9408-467e-a9b6-59b0879d64b8&sktid=f3c2a0c7-2351-4635-80dc-09579ed69557&skt=2025-11-07T02%3A34%3A30Z&ske=2025-11-07T14%3A49%3A30Z&sks=b&skv=2025-01-05&sv=2025-01-05&st=2025-11-07T03%3A11%3A42Z&se=2025-11-07T15%3A26%3A42Z&sr=b&sp=r&sig=Cd%2BNuB0D4D5KhdluBnwMZHBamhLSt%2BOQGw%2FTLwwO8nY%3D",
+    "preview": "https://hk-stream2.beproduct.com/preview/0ea6759e-1240-4608-bcc0-da76565ced21/02fe52e8-f800-42f8-be55-ee1c56722a9b/1/0/wns057 - 408 revolution energy - wns057.png?width=1000"
+  },
+  "sizeRange": [],
+  "suppliers": [],
+  "created_by": {
+    "name": "Created | 创建者",
+    "type": "UserLabel",
+    "value": "Natalie.James @ 10/18/2021 17:38:10",
+    "required": false
+  },
+  "modifiedAt": "2025-11-07T03:26:40.153Z",
+  "modifiedBy": {
+    "id": "ace65e9d-a533-4141-b84e-45d07033b244",
+    "name": "Natalie.James"
+  },
+  "composition": {
+    "name": "Content | 面料成分",
+    "type": "CompositeControl",
+    "value": [
+      {
+        "code": "NYLON",
+        "value": 71
+      },
+      {
+        "code": "ELASTANE",
+        "value": 29
+      }
+    ],
+    "required": false
+  },
+  "detailImage": {
+    "origin": null,
+    "preview": ""
+  },
+  "header_name": {
+    "name": "Material Name | 材料名称",
+    "type": "Text",
+    "value": "408 REVOLUTION ENERGY",
+    "required": true
+  },
+  "season_year": {
+    "name": "Season | Year",
+    "type": "LabelText",
+    "value": " | ",
+    "required": false
+  },
+  "PageModified": {
+    "name": "Page Last Modified | 最后修改的页面",
+    "type": "Text",
+    "value": "Attributes",
+    "required": false
+  },
+  "back_content": {
+    "name": "Back Content | 背面成分",
+    "type": "CompositeControl",
+    "value": null,
+    "required": false
+  },
+  "fabric_group": {
+    "name": "Fabric Group | 面料组",
+    "type": "DropDown",
+    "value": "Knit",
+    "required": false
+  },
+  "material_mcq": {
+    "name": "MCQ | 最小裁剪数量",
+    "type": "Number",
+    "value": 70,
+    "required": false
+  },
+  "material_moq": {
+    "name": "MOQ | 最小订购量",
+    "type": "Number",
+    "value": 70,
+    "required": false
+  },
+  "header_number": {
+    "name": "Material Reference Code | 材料参考代码",
+    "type": "Text",
+    "value": "WNS057",
+    "required": true
+  },
+  "material_type": {
+    "name": "Material Type | 材料类型",
+    "type": "DropDown",
+    "value": "Warp Knit",
+    "required": false
+  },
+  "supplier_code": {
+    "name": "Supplier Code | 供应商代码",
+    "type": "Text",
+    "value": "408 REVOLUTION ENERGY",
+    "required": false
+  },
+  "surcharge_mcq": {
+    "name": "SURCHARGE MCQ",
+    "type": "Decimal",
+    "value": null,
+    "required": false
+  },
+  "surcharge_moq": {
+    "name": "surcharge_moq",
+    "type": "Decimal",
+    "value": null,
+    "required": false
+  },
+  "fabric_name_cn": {
+    "name": "Fabric Name CN | 面料中文名称",
+    "type": "Text",
+    "value": null,
+    "required": false
+  },
+  "material_width": {
+    "name": "Width | 宽度",
+    "type": "Decimal",
+    "value": 147,
+    "required": false
+  },
+  "material_yield": {
+    "name": "Yield",
+    "type": "Decimal",
+    "value": 3.37,
+    "required": false
+  },
+  "currency_lookup": {
+    "name": "Purchase Price Currency",
+    "type": "DropDown",
+    "value": "USD",
+    "required": false
+  },
+  "material_weight": {
+    "name": "Weight | 重量",
+    "type": "Decimal",
+    "value": 195,
+    "required": false
+  },
+  "FolderModifiedAt": {
+    "name": "Material Last Modified | 最后修改时间",
+    "type": "DateTime",
+    "value": "2025-11-07T03:26:40.153Z",
+    "required": false
+  },
+  "FolderModifiedBy": {
+    "name": "Material Modified By | 材料修改人",
+    "type": "UserLabel",
+    "value": "Natalie.James",
+    "required": false
+  },
+  "core_3d_material": {
+    "name": "3D Material | 3D材料",
+    "type": "Label3dMaterial",
+    "value": true,
+    "required": false
+  },
+  "care_instructions": {
+    "name": "Care Instructions | 护理说明",
+    "type": "MultiSelect",
+    "value": [
+      ""
+    ],
+    "required": false
+  },
+  "costing_price_usd": {
+    "name": "Costing Price USD",
+    "type": "Decimal",
+    "value": 8.55,
+    "required": false
+  },
+  "properties_fabric": {
+    "name": "Properties | 属性",
+    "type": "Memo",
+    "value": null,
+    "required": false
+  },
+  "material_full_width": {
+    "name": "Full Width | 全宽",
+    "type": "Decimal",
+    "value": 152,
+    "required": false
+  },
+  "unit_of_measure_base": {
+    "name": "Unit of Measure (base)",
+    "type": "DropDown",
+    "value": "M",
+    "required": false
+  },
+  "material_purchase_price": {
+    "name": "Purchase Price",
+    "type": "Decimal",
+    "value": 400,
+    "required": false
+  },
+  "material_reference_code": {
+    "name": "Material ND # | 材料ND#",
+    "type": "Text",
+    "value": null,
+    "required": false
+  },
+  "unit_of_measure_purchase_price": {
+    "name": "Unit of Measure (Purchase Price)",
+    "type": "DropDown",
+    "value": "M",
+    "required": false
+  }
+}

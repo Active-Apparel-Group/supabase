@@ -1,0 +1,247 @@
+# 📚 Supabase Tracking — Quick Reference Card
+
+## Project Structure
+
+```
+supabase-tracking/
+├── STATUS-SUMMARY.md          ⭐ READ THIS FIRST
+├── PROJECT-PLAN.md            📋 Complete roadmap & timeline
+├── migrations/                 ✅ All 4 migrations (DEPLOYED)
+│   ├── 0001_create_tracking_schema.sql
+│   ├── 0002_create_template_tables.sql
+│   ├── 0003_create_core_tables.sql
+│   └── 0004_create_audit_and_indexes.sql
+├── docs/
+│   ├── 05-frontend-implementation-plan.md  🎨 FOR FRONTEND DEV
+│   ├── 02-supabase-schema-blueprint.md     📊 Database reference
+│   ├── 03-import-and-api-plan.md           🔌 API strategy
+│   ├── 04-garment-timeline-template.md     📝 Template spec
+│   ├── supplier-portal-tracking-plan.md    🏭 Vendor portal
+│   ├── 01-beproduct-schema-research.md     🔍 Research
+│   └── prd.md                              📄 Requirements
+└── ref/
+    └── timeline_extract_beproduct.json     📋 Source template
+```
+
+---
+
+## Who Should Read What?
+
+### 👨‍💻 Frontend Developer / AI Agent
+**Primary:** `docs/05-frontend-implementation-plan.md`
+- Complete UI/UX specifications
+- Mockups and wireframes
+- TypeScript interfaces
+- Component architecture
+- Mock data examples
+
+**Supporting:**
+- `STATUS-SUMMARY.md` (context)
+- `docs/02-supabase-schema-blueprint.md` (data model reference)
+
+### 🔧 Backend Developer
+**Primary:** `PROJECT-PLAN.md` Phase 2 section
+- Edge Function specs
+- SQL function requirements
+- Import pipeline flow
+
+**Supporting:**
+- `docs/03-import-and-api-plan.md` (detailed API strategy)
+- `docs/04-garment-timeline-template.md` (template structure)
+- `migrations/*.sql` (schema reference)
+
+### 🏭 Vendor Portal Team (Later)
+**Primary:** `docs/supplier-portal-tracking-plan.md`
+- Vendor-specific views
+- Filtering strategy
+- API endpoints
+
+### 📊 Project Manager / Product Owner
+**Primary:** `PROJECT-PLAN.md`
+- All 7 phases
+- Timeline and milestones
+- Success metrics
+- Risk register
+
+**Quick status:** `STATUS-SUMMARY.md`
+
+---
+
+## Current Status (October 23, 2025)
+
+| Phase | Status | Progress |
+|-------|--------|----------|
+| Schema Design | ✅ Complete | 100% |
+| Migrations | ✅ Deployed | 100% |
+| Edge Functions | 🚧 In Progress | 20% |
+| Analytics Views | 🔜 Upcoming | 0% |
+| Frontend | 🔜 Starting | 5% (docs ready) |
+| Testing | 🔜 Upcoming | 0% |
+| Pilot | 🔜 Upcoming | 0% |
+| Production | 🔜 Upcoming | 0% |
+
+**Overall:** ~30% complete
+
+---
+
+## Quick Commands
+
+### Check Supabase Migrations
+```bash
+# List all migrations (if using Supabase CLI locally)
+supabase migration list
+
+# Or query Supabase directly
+psql $DATABASE_URL -c "SELECT * FROM supabase_migrations.schema_migrations;"
+```
+
+### Verify Schema
+```sql
+-- Check tracking schema exists
+SELECT schema_name FROM information_schema.schemata WHERE schema_name = 'tracking';
+
+-- List all tracking tables
+SELECT table_name FROM information_schema.tables WHERE table_schema = 'tracking';
+
+-- Check enum types
+SELECT typname FROM pg_type WHERE typnamespace = 'tracking'::regnamespace;
+```
+
+### Test Template Seed (Coming Soon)
+```bash
+# Run template seed script
+psql $DATABASE_URL -f supabase-tracking/scripts/seed-template.sql
+```
+
+---
+
+## Key Deliverables by Phase
+
+### Phase 2 (Current - Backend)
+- [ ] Template seed script
+- [ ] SQL upsert functions
+- [ ] `tracking-import-beproduct` Edge Function
+- [ ] `tracking-template-apply` Edge Function
+- [ ] `tracking-timeline-action` Edge Function
+
+### Phase 3 (Next - Analytics)
+- [ ] Progress views (5 SQL views)
+- [ ] Vendor snapshot views (3 SQL views)
+- [ ] `tracking-vendor-portal` Edge Function
+
+### Phase 4 (Frontend)
+- [ ] Template Manager UI
+- [ ] Folder Manager UI
+- [ ] Plan Manager UI
+- [ ] Add Styles UI (stub)
+
+---
+
+## Schema Quick Reference
+
+### Core Tables
+- `tracking.timeline_templates` — Master milestone blueprints
+- `tracking.timeline_template_items` — Individual milestones
+- `tracking.folders` — Organize by brand/season
+- `tracking.plans` — Time and action plans
+- `tracking.plan_styles` — Styles in plans
+- `tracking.plan_style_timelines` — Milestone instances per style
+- `tracking.plan_materials` — Materials in plans
+- `tracking.plan_material_timelines` — Milestone instances per material
+
+### Enums
+- `timeline_status_enum`: NOT_STARTED, IN_PROGRESS, APPROVED, REJECTED, COMPLETE, BLOCKED
+- `timeline_type_enum`: MASTER, STYLE, MATERIAL
+- `view_type_enum`: STYLE, MATERIAL
+- `page_type_enum`: BOM, SAMPLE_REQUEST_MULTI, SAMPLE_REQUEST, FORM, TECHPACK, NONE
+- `node_type_enum`: ANCHOR, TASK
+- `offset_relation_enum`: AFTER, BEFORE
+- `offset_unit_enum`: DAYS, BUSINESS_DAYS
+
+---
+
+## Resources
+
+### Documentation
+- BeProduct API Swagger: https://developers.beproduct.com/
+- Supabase Docs: https://supabase.com/docs
+- GraphQL Queries: Auto-generated by Supabase
+
+### Tools
+- Supabase Dashboard: https://app.supabase.com/
+- BeProduct Portal: [Your portal URL]
+- GitHub Repo: Active-Apparel-Group/mcp_beproduct
+
+### Communication
+- Slack: `#tracking-implementation`
+- Weekly Standups: [Schedule TBD]
+- Demo Days: Bi-weekly
+
+---
+
+## Next Actions (This Week)
+
+### Backend Team
+1. Create `scripts/seed-template.sql` or `.ts`
+2. Build `tracking.fn_upsert_folder()`
+3. Start Edge Function scaffolding
+
+### Frontend Team
+1. Review `05-frontend-implementation-plan.md`
+2. Set up routing and state management
+3. Build Template List page (Phase 1)
+
+### Everyone
+1. Review `STATUS-SUMMARY.md`
+2. Ask questions in Slack
+3. Update `PROJECT-PLAN.md` with progress
+
+---
+
+## Common Questions
+
+**Q: Where's the database?**
+A: Supabase production. All migrations deployed. Check Supabase dashboard.
+
+**Q: What data model should frontend use?**
+A: See TypeScript interfaces in `docs/05-frontend-implementation-plan.md` Section "Data Model Reference"
+
+**Q: How do I test without backend?**
+A: Use mock data provided in frontend plan. Backend integration comes later.
+
+**Q: What's the garment timeline template?**
+A: 24-milestone blueprint in `ref/timeline_extract_beproduct.json`. See `docs/04-garment-timeline-template.md`
+
+**Q: When can suppliers see their data?**
+A: Phase 3-4 (vendor portal). See `supplier-portal-tracking-plan.md`
+
+**Q: How do we import BeProduct data?**
+A: Via `tracking-import-beproduct` Edge Function (Phase 2). See `docs/03-import-and-api-plan.md`
+
+---
+
+## Success Criteria
+
+### This Sprint (2 weeks)
+- ✅ Template seeded in Supabase
+- ✅ Import function processes test data
+- ✅ Template Manager UI functional (mock data)
+- ✅ Demo ready for stakeholders
+
+### Next Sprint (4 weeks)
+- ✅ Full import pipeline working
+- ✅ Folder + Plan UI complete
+- ✅ Analytics views created
+- ✅ Internal beta testing begins
+
+### Production (8 weeks)
+- ✅ GREYSON pilot successful
+- ✅ 3-5 suppliers using vendor portal
+- ✅ Multi-brand support
+- ✅ Automated nightly sync
+
+---
+
+**Last Updated:** October 23, 2025  
+**Maintained By:** [Project Lead]  
+**Questions?** Check docs or ask in Slack `#tracking-implementation`

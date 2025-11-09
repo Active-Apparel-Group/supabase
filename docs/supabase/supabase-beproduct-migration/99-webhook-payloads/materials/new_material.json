@@ -1,0 +1,269 @@
+{
+  "subscriptionId": null,
+  "eventType": "OnChange",
+  "objectType": "Header",
+  "headerId": "426eb9bd-2030-4e17-9256-0f3101ec5791",
+  "headerNumber": "TEST",
+  "headerName": "TEST",
+  "folderId": "c8d7e5cd-7e61-496c-8786-253594b5fb3e",
+  "folderName": "Material",
+  "applicationId": null,
+  "applicationName": null,
+  "pageId": null,
+  "data": {
+    "after": null,
+    "before": {
+      "mainImage": {
+        "preview": "",
+        "origin": null
+      },
+      "detailImage": {
+        "preview": "",
+        "origin": null
+      },
+      "header_number": {
+        "name": "Material Reference Code | 材料参考代码",
+        "value": "TEST",
+        "type": "Text",
+        "required": true
+      },
+      "header_name": {
+        "name": "Material Name | 材料名称",
+        "value": "TEST",
+        "type": "Text",
+        "required": true
+      },
+      "created_by": {
+        "name": "Created | 创建者",
+        "value": "svc.beproduct @ 11/04/2025 01:34:27",
+        "type": "UserLabel",
+        "required": false
+      },
+      "core_3d_material": {
+        "name": "3D Material | 3D材料",
+        "value": false,
+        "type": "Label3dMaterial",
+        "required": false
+      },
+      "FolderModifiedAt": {
+        "name": "Material Last Modified | 最后修改时间",
+        "value": "2025-11-04T01:34:30.153Z",
+        "type": "DateTime",
+        "required": false
+      },
+      "FolderModifiedBy": {
+        "name": "Material Modified By | 材料修改人",
+        "value": "svc.beproduct",
+        "type": "UserLabel",
+        "required": false
+      },
+      "PageModified": {
+        "name": "Page Last Modified | 最后修改的页面",
+        "value": "Attributes",
+        "type": "Text",
+        "required": false
+      },
+      "care_instructions": {
+        "name": "Care Instructions | 护理说明",
+        "value": [],
+        "type": "MultiSelect",
+        "required": false
+      },
+      "material_type": {
+        "name": "Material Type | 材料类型",
+        "value": null,
+        "type": "DropDown",
+        "required": false
+      },
+      "composition": {
+        "name": "Content | 面料成分",
+        "value": null,
+        "type": "CompositeControl",
+        "required": false
+      },
+      "supplier": {
+        "name": "Factory | 供应商",
+        "value": null,
+        "type": "PartnerDropDown",
+        "required": false
+      },
+      "notes": {
+        "name": "Notes | 注释",
+        "value": null,
+        "type": "Memo",
+        "required": false
+      },
+      "fabric_name_cn": {
+        "name": "Fabric Name CN | 面料中文名称",
+        "value": "TEST",
+        "type": "Text",
+        "required": false
+      },
+      "supplier_code": {
+        "name": "Supplier Code | 供应商代码",
+        "value": null,
+        "type": "Text",
+        "required": false
+      },
+      "material_reference_code": {
+        "name": "Material ND # | 材料ND#",
+        "value": "TEST",
+        "type": "Text",
+        "required": false
+      },
+      "lead_time": {
+        "name": "Lead Time | 交货时间",
+        "value": null,
+        "type": "Text",
+        "required": false
+      },
+      "season_year": {
+        "name": "Season | Year",
+        "value": " | ",
+        "type": "LabelText",
+        "required": false
+      },
+      "status": {
+        "name": "Status | 状态",
+        "value": "",
+        "type": "DropDown",
+        "required": false
+      },
+      "brand_1": {
+        "name": "Brand | 品牌",
+        "value": "BEPRODUCT TESTING TEAM",
+        "type": "DropDown",
+        "required": true
+      },
+      "modified": {
+        "name": "Modified",
+        "value": "svc.beproduct @ 11/04/2025 01:34:30",
+        "type": "LabelText",
+        "required": false
+      },
+      "fabric_group": {
+        "name": "Fabric Group | 面料组",
+        "value": "",
+        "type": "DropDown",
+        "required": false
+      },
+      "properties_fabric": {
+        "name": "Properties | 属性",
+        "value": null,
+        "type": "Memo",
+        "required": false
+      },
+      "back_content": {
+        "name": "Back Content | 背面成分",
+        "value": null,
+        "type": "CompositeControl",
+        "required": false
+      },
+      "surcharge_moq": {
+        "name": "surcharge_moq",
+        "value": null,
+        "type": "Decimal",
+        "required": false
+      },
+      "material_mcq": {
+        "name": "MCQ | 最小裁剪数量",
+        "value": null,
+        "type": "Number",
+        "required": false
+      },
+      "leadtime": {
+        "name": "Lead Time | 交货时间",
+        "value": 0,
+        "type": "Number",
+        "required": false
+      },
+      "surcharge_mcq": {
+        "name": "SURCHARGE MCQ",
+        "value": null,
+        "type": "Decimal",
+        "required": false
+      },
+      "material_moq": {
+        "name": "MOQ | 最小订购量",
+        "value": null,
+        "type": "Number",
+        "required": false
+      },
+      "material_width": {
+        "name": "Width | 宽度",
+        "value": null,
+        "type": "Decimal",
+        "required": false
+      },
+      "material_full_width": {
+        "name": "Full Width | 全宽",
+        "value": null,
+        "type": "Decimal",
+        "required": false
+      },
+      "material_weight": {
+        "name": "Weight | 重量",
+        "value": null,
+        "type": "Decimal",
+        "required": false
+      },
+      "currency_lookup": {
+        "name": "Purchase Price Currency",
+        "value": "",
+        "type": "DropDown",
+        "required": false
+      },
+      "unit_of_measure_base": {
+        "name": "Unit of Measure (base)",
+        "value": "",
+        "type": "DropDown",
+        "required": false
+      },
+      "material_purchase_price": {
+        "name": "Purchase Price",
+        "value": null,
+        "type": "Decimal",
+        "required": false
+      },
+      "unit_of_measure_purchase_price": {
+        "name": "Unit of Measure (Purchase Price)",
+        "value": "",
+        "type": "DropDown",
+        "required": false
+      },
+      "costing_price_usd": {
+        "name": "Costing Price USD",
+        "value": null,
+        "type": "Decimal",
+        "required": false
+      },
+      "material_yield": {
+        "name": "Yield",
+        "value": null,
+        "type": "Decimal",
+        "required": false
+      },
+      "createdBy": {
+        "id": "d76de810-1276-4149-aba3-623f633a6acc",
+        "name": "svc.beproduct"
+      },
+      "createdAt": "2025-11-04T01:34:27.752Z",
+      "modifiedBy": {
+        "id": "d76de810-1276-4149-aba3-623f633a6acc",
+        "name": "svc.beproduct"
+      },
+      "modifiedAt": "2025-11-04T01:34:30.169Z",
+      "colorways": [],
+      "sizeRange": [],
+      "suppliers": [],
+      "tags": null,
+      "isDeleted": true,
+      "planIds": null
+    }
+  },
+  "user": {
+    "id": "d76de810-1276-4149-aba3-623f633a6acc",
+    "userName": "svc.beproduct"
+  },
+  "date": "2025-11-04T01:35:12.6418708Z"
+}

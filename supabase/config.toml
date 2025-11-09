@@ -1,0 +1,14 @@
+# Supabase Config TOML
+
+# Example config for OAuth and other settings
+[auth.external.github]
+enabled = true
+client_id = "env(GITHUB_CLIENT_ID)"
+secret = "env(GITHUB_SECRET)"
+
+# Edge Functions configuration
+[functions.beproduct-masterdata-sync]
+verify_jwt = false
+
+[functions.beproduct-tracking-webhook]
+verify_jwt = false

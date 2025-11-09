@@ -1,0 +1,10 @@
+folder_id,folder_name,description,active,extracted_at
+c8d7e5cd-7e61-496c-8786-253594b5fb3e,01 Fabrics,01 Fabrics,t,2025-11-06 11:03:33.506442+00
+c4fc1f98-939e-4716-aa01-235c5c5db630,02 Artworks,02 Artworks,t,2025-11-06 11:03:33.506442+00
+5a34ce46-e7f1-476a-b9a2-0c8d7dbb873f,03 Trims,03 Trims,t,2025-11-06 11:03:33.506442+00
+f0693657-d57e-4c6b-929d-6d2e8f6b9088,04 Labels,04 Labels,t,2025-11-06 11:03:33.506442+00
+b0881f0d-a08a-4754-9968-01ec62e6aff7,05 Packaging,05 Packaging,t,2025-11-06 11:03:33.506442+00
+f3a1a356-fa97-4d92-b3f2-7dcee275e579,06 3D Seams,06 3D Seams,t,2025-11-06 11:03:33.506442+00
+bcf9c5cb-a660-4f53-9e3e-5ef4bd2ae4a8,ZZ Knit Fabrics,01 Knit Fabrics,t,2025-11-06 11:03:33.506442+00
+e3d79be0-8420-473d-aebe-339a34237158,ZZ Non Wovens,03 Non Wovens,f,2025-11-06 11:03:33.506442+00
+85cb9cc3-da10-4085-86e9-ca852fb83884,ZZ Woven Fabrics,02 Woven Fabrics,f,2025-11-06 11:03:33.506442+00

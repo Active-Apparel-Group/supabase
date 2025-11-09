@@ -1,0 +1,542 @@
+{
+  "subscriptionId": null,
+  "eventType": "OnChange",
+  "objectType": "Header",
+  "headerId": "b07fbed9-3352-4bb8-8ecb-ac218085af26",
+  "headerNumber": "VVSIS01",
+  "headerName": "STRETCHED SILK WOVEN",
+  "folderId": "c8d7e5cd-7e61-496c-8786-253594b5fb3e",
+  "folderName": "Material",
+  "applicationId": null,
+  "applicationName": null,
+  "pageId": null,
+  "data": {
+    "after": {
+      "mainImage": {
+        "preview": "",
+        "origin": null
+      },
+      "detailImage": {
+        "preview": "",
+        "origin": null
+      },
+      "header_number": {
+        "name": "Material Reference Code | 材料参考代码",
+        "value": "VVSIS01",
+        "type": "Text",
+        "required": true
+      },
+      "header_name": {
+        "name": "Material Name | 材料名称",
+        "value": "STRETCHED SILK WOVEN",
+        "type": "Text",
+        "required": true
+      },
+      "created_by": {
+        "name": "Created | 创建者",
+        "value": "Natalie.James @ 12/29/2022 22:56:17",
+        "type": "UserLabel",
+        "required": false
+      },
+      "core_3d_material": {
+        "name": "3D Material | 3D材料",
+        "value": false,
+        "type": "Label3dMaterial",
+        "required": false
+      },
+      "FolderModifiedAt": {
+        "name": "Material Last Modified | 最后修改时间",
+        "value": "2025-11-04T01:32:28.606Z",
+        "type": "DateTime",
+        "required": false
+      },
+      "FolderModifiedBy": {
+        "name": "Material Modified By | 材料修改人",
+        "value": "svc.beproduct",
+        "type": "UserLabel",
+        "required": false
+      },
+      "PageModified": {
+        "name": "Page Last Modified | 最后修改的页面",
+        "value": "Attributes",
+        "type": "Text",
+        "required": false
+      },
+      "care_instructions": {
+        "name": "Care Instructions | 护理说明",
+        "value": [],
+        "type": "MultiSelect",
+        "required": false
+      },
+      "material_type": {
+        "name": "Material Type | 材料类型",
+        "value": "Woven",
+        "type": "DropDown",
+        "required": false
+      },
+      "composition": {
+        "name": "Content | 面料成分",
+        "value": [
+          {
+            "code": "VISCOSE",
+            "value": 59
+          },
+          {
+            "code": "SILK",
+            "value": 30
+          },
+          {
+            "code": "ELASTANE",
+            "value": 11
+          }
+        ],
+        "type": "CompositeControl",
+        "required": false
+      },
+      "supplier": {
+        "name": "Factory | 供应商",
+        "value": null,
+        "type": "PartnerDropDown",
+        "required": false
+      },
+      "notes": {
+        "name": "Notes | 注释",
+        "value": "...",
+        "type": "Memo",
+        "required": false
+      },
+      "fabric_name_cn": {
+        "name": "Fabric Name CN | 面料中文名称",
+        "value": "16MM______",
+        "type": "Text",
+        "required": false
+      },
+      "supplier_code": {
+        "name": "Supplier Code | 供应商代码",
+        "value": "BSB161034",
+        "type": "Text",
+        "required": false
+      },
+      "material_reference_code": {
+        "name": "Material ND # | 材料ND#",
+        "value": "ND4556F",
+        "type": "Text",
+        "required": false
+      },
+      "lead_time": {
+        "name": "Lead Time | 交货时间",
+        "value": "30",
+        "type": "Text",
+        "required": false
+      },
+      "season_year": {
+        "name": "Season | Year",
+        "value": " | ",
+        "type": "LabelText",
+        "required": false
+      },
+      "status": {
+        "name": "Status | 状态",
+        "value": null,
+        "type": "DropDown",
+        "required": false
+      },
+      "brand_1": {
+        "name": "Brand | 品牌",
+        "value": "AAG CORE",
+        "type": "DropDown",
+        "required": true
+      },
+      "modified": {
+        "name": "Modified",
+        "value": "aagitsecurity @ 10/10/2025 03:15:58",
+        "type": "LabelText",
+        "required": false
+      },
+      "fabric_group": {
+        "name": "Fabric Group | 面料组",
+        "value": "Woven",
+        "type": "DropDown",
+        "required": false
+      },
+      "properties_fabric": {
+        "name": "Properties | 属性",
+        "value": null,
+        "type": "Memo",
+        "required": false
+      },
+      "back_content": {
+        "name": "Back Content | 背面成分",
+        "value": null,
+        "type": "CompositeControl",
+        "required": false
+      },
+      "surcharge_moq": {
+        "name": "surcharge_moq",
+        "value": null,
+        "type": "Decimal",
+        "required": false
+      },
+      "material_mcq": {
+        "name": "MCQ | 最小裁剪数量",
+        "value": 300,
+        "type": "Number",
+        "required": false
+      },
+      "leadtime": {
+        "name": "Lead Time | 交货时间",
+        "value": 30,
+        "type": "Number",
+        "required": false
+      },
+      "surcharge_mcq": {
+        "name": "SURCHARGE MCQ",
+        "value": 300,
+        "type": "Decimal",
+        "required": false
+      },
+      "material_moq": {
+        "name": "MOQ | 最小订购量",
+        "value": 300,
+        "type": "Number",
+        "required": false
+      },
+      "material_width": {
+        "name": "Width | 宽度",
+        "value": 130,
+        "type": "Decimal",
+        "required": false
+      },
+      "material_full_width": {
+        "name": "Full Width | 全宽",
+        "value": 135,
+        "type": "Decimal",
+        "required": false
+      },
+      "material_weight": {
+        "name": "Weight | 重量",
+        "value": 68,
+        "type": "Decimal",
+        "required": false
+      },
+      "currency_lookup": {
+        "name": "Purchase Price Currency",
+        "value": "RMB",
+        "type": "DropDown",
+        "required": false
+      },
+      "unit_of_measure_base": {
+        "name": "Unit of Measure (base)",
+        "value": "M",
+        "type": "DropDown",
+        "required": false
+      },
+      "material_purchase_price": {
+        "name": "Purchase Price",
+        "value": 78,
+        "type": "Decimal",
+        "required": false
+      },
+      "unit_of_measure_purchase_price": {
+        "name": "Unit of Measure (Purchase Price)",
+        "value": "M",
+        "type": "DropDown",
+        "required": false
+      },
+      "costing_price_usd": {
+        "name": "Costing Price USD",
+        "value": 11.14286,
+        "type": "Decimal",
+        "required": false
+      },
+      "material_yield": {
+        "name": "Yield",
+        "value": 10.89,
+        "type": "Decimal",
+        "required": false
+      },
+      "createdBy": {
+        "id": "ace65e9d-a533-4141-b84e-45d07033b244",
+        "name": "Natalie.James"
+      },
+      "createdAt": "2022-12-29T22:56:17.491Z",
+      "modifiedBy": {
+        "id": "d76de810-1276-4149-aba3-623f633a6acc",
+        "name": "svc.beproduct"
+      },
+      "modifiedAt": "2025-11-04T01:32:28.606Z",
+      "colorways": [],
+      "sizeRange": [],
+      "suppliers": [],
+      "tags": null,
+      "isDeleted": false,
+      "planIds": null
+    },
+    "before": {
+      "mainImage": {
+        "preview": "",
+        "origin": null
+      },
+      "detailImage": {
+        "preview": "",
+        "origin": null
+      },
+      "header_number": {
+        "name": "Material Reference Code | 材料参考代码",
+        "value": "VVSIS01",
+        "type": "Text",
+        "required": true
+      },
+      "header_name": {
+        "name": "Material Name | 材料名称",
+        "value": "STRETCHED SILK WOVEN",
+        "type": "Text",
+        "required": true
+      },
+      "created_by": {
+        "name": "Created | 创建者",
+        "value": "Natalie.James @ 12/29/2022 22:56:17",
+        "type": "UserLabel",
+        "required": false
+      },
+      "core_3d_material": {
+        "name": "3D Material | 3D材料",
+        "value": false,
+        "type": "Label3dMaterial",
+        "required": false
+      },
+      "FolderModifiedAt": {
+        "name": "Material Last Modified | 最后修改时间",
+        "value": "2025-10-10T03:15:58.894Z",
+        "type": "DateTime",
+        "required": false
+      },
+      "FolderModifiedBy": {
+        "name": "Material Modified By | 材料修改人",
+        "value": "aagitsecurity",
+        "type": "UserLabel",
+        "required": false
+      },
+      "PageModified": {
+        "name": "Page Last Modified | 最后修改的页面",
+        "value": "Attributes",
+        "type": "Text",
+        "required": false
+      },
+      "care_instructions": {
+        "name": "Care Instructions | 护理说明",
+        "value": [],
+        "type": "MultiSelect",
+        "required": false
+      },
+      "material_type": {
+        "name": "Material Type | 材料类型",
+        "value": "Woven",
+        "type": "DropDown",
+        "required": false
+      },
+      "composition": {
+        "name": "Content | 面料成分",
+        "value": [
+          {
+            "code": "VISCOSE",
+            "value": 59
+          },
+          {
+            "code": "SILK",
+            "value": 30
+          },
+          {
+            "code": "ELASTANE",
+            "value": 11
+          }
+        ],
+        "type": "CompositeControl",
+        "required": false
+      },
+      "supplier": {
+        "name": "Factory | 供应商",
+        "value": null,
+        "type": "PartnerDropDown",
+        "required": false
+      },
+      "notes": {
+        "name": "Notes | 注释",
+        "value": null,
+        "type": "Memo",
+        "required": false
+      },
+      "fabric_name_cn": {
+        "name": "Fabric Name CN | 面料中文名称",
+        "value": "16MM______",
+        "type": "Text",
+        "required": false
+      },
+      "supplier_code": {
+        "name": "Supplier Code | 供应商代码",
+        "value": "BSB161034",
+        "type": "Text",
+        "required": false
+      },
+      "material_reference_code": {
+        "name": "Material ND # | 材料ND#",
+        "value": "ND4556F",
+        "type": "Text",
+        "required": false
+      },
+      "lead_time": {
+        "name": "Lead Time | 交货时间",
+        "value": "30",
+        "type": "Text",
+        "required": false
+      },
+      "season_year": {
+        "name": "Season | Year",
+        "value": " | ",
+        "type": "LabelText",
+        "required": false
+      },
+      "status": {
+        "name": "Status | 状态",
+        "value": "",
+        "type": "DropDown",
+        "required": false
+      },
+      "brand_1": {
+        "name": "Brand | 品牌",
+        "value": "AAG CORE",
+        "type": "DropDown",
+        "required": true
+      },
+      "modified": {
+        "name": "Modified",
+        "value": "aagitsecurity @ 10/10/2025 3:15:58 AM",
+        "type": "LabelText",
+        "required": false
+      },
+      "fabric_group": {
+        "name": "Fabric Group | 面料组",
+        "value": "Woven",
+        "type": "DropDown",
+        "required": false
+      },
+      "properties_fabric": {
+        "name": "Properties | 属性",
+        "value": "",
+        "type": "Memo",
+        "required": false
+      },
+      "back_content": {
+        "name": "Back Content | 背面成分",
+        "value": null,
+        "type": "CompositeControl",
+        "required": false
+      },
+      "surcharge_moq": {
+        "name": "surcharge_moq",
+        "value": null,
+        "type": "Decimal",
+        "required": false
+      },
+      "material_mcq": {
+        "name": "MCQ | 最小裁剪数量",
+        "value": 300,
+        "type": "Number",
+        "required": false
+      },
+      "leadtime": {
+        "name": "Lead Time | 交货时间",
+        "value": 30,
+        "type": "Number",
+        "required": false
+      },
+      "surcharge_mcq": {
+        "name": "SURCHARGE MCQ",
+        "value": 300,
+        "type": "Decimal",
+        "required": false
+      },
+      "material_moq": {
+        "name": "MOQ | 最小订购量",
+        "value": 300,
+        "type": "Number",
+        "required": false
+      },
+      "material_width": {
+        "name": "Width | 宽度",
+        "value": 130,
+        "type": "Decimal",
+        "required": false
+      },
+      "material_full_width": {
+        "name": "Full Width | 全宽",
+        "value": 135,
+        "type": "Decimal",
+        "required": false
+      },
+      "material_weight": {
+        "name": "Weight | 重量",
+        "value": 68,
+        "type": "Decimal",
+        "required": false
+      },
+      "currency_lookup": {
+        "name": "Purchase Price Currency",
+        "value": "RMB",
+        "type": "DropDown",
+        "required": false
+      },
+      "unit_of_measure_base": {
+        "name": "Unit of Measure (base)",
+        "value": "M",
+        "type": "DropDown",
+        "required": false
+      },
+      "material_purchase_price": {
+        "name": "Purchase Price",
+        "value": 78,
+        "type": "Decimal",
+        "required": false
+      },
+      "unit_of_measure_purchase_price": {
+        "name": "Unit of Measure (Purchase Price)",
+        "value": "M",
+        "type": "DropDown",
+        "required": false
+      },
+      "costing_price_usd": {
+        "name": "Costing Price USD",
+        "value": 11.14286,
+        "type": "Decimal",
+        "required": false
+      },
+      "material_yield": {
+        "name": "Yield",
+        "value": 10.89,
+        "type": "Decimal",
+        "required": false
+      },
+      "createdBy": {
+        "id": "ace65e9d-a533-4141-b84e-45d07033b244",
+        "name": "Natalie.James"
+      },
+      "createdAt": "2022-12-29T22:56:17.491Z",
+      "modifiedBy": {
+        "id": "523a79ff-6b7e-4509-8dd1-c91fe82e334f",
+        "name": "aagitsecurity"
+      },
+      "modifiedAt": "2025-10-10T03:15:58.908Z",
+      "colorways": [],
+      "sizeRange": [],
+      "suppliers": [],
+      "tags": null,
+      "isDeleted": false,
+      "planIds": null
+    }
+  },
+  "user": {
+    "id": "d76de810-1276-4149-aba3-623f633a6acc",
+    "userName": "svc.beproduct"
+  },
+  "date": "2025-11-04T01:32:29.7565658Z"
+}

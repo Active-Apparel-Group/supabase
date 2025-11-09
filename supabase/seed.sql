@@ -1,0 +1,2 @@
+-- Example seed data for local development
+-- Add INSERT statements for your tables here

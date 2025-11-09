@@ -1,0 +1,23 @@
+{
+  "event_message": "{\n  timelineId: \"c3396c79-2e92-4e91-8697-6b4c7a02d133\",\n  styleId: null,\n  colorway: null,\n  milestone: \"Approved with corrections\",\n  before_status: \"Approved with corrections\",\n  after_status: \"Approved with corrections\",\n  before_rev_date: null,\n  after_rev_date: null,\n  before_final_date: \"2025-11-07T17:23:10Z\",\n  after_final_date: \"2025-11-06T17:40:47Z\",\n  before_due_date: \"2025-11-07T17:23:10Z\",\n  after_due_date: \"2025-11-07T17:23:10Z\",\n  before_plan_date: \"2025-11-07T17:23:10Z\",\n  after_plan_date: \"2025-11-07T17:23:10Z\",\n  before_submits_quantity: 0,\n  after_submits_quantity: 0,\n  before_assignments: [ \"875fe554-cd04-430d-a9a4-f95c27659293\" ],\n  after_assignments: [ \"875fe554-cd04-430d-a9a4-f95c27659293\" ]\n}\n",
+  "id": "385e72bc-a6e8-4e41-964c-27e13a126d8d",
+  "metadata": [
+    {
+      "boot_time": null,
+      "cpu_time_used": null,
+      "deployment_id": "bcvacwoofvygdmxbqsaq_09f12195-9c1a-481e-8522-c703eefd8264_32",
+      "event_type": "Log",
+      "execution_id": "08f682f4-1a9e-4624-aa51-28ecb4454f9e",
+      "function_id": "09f12195-9c1a-481e-8522-c703eefd8264",
+      "level": "info",
+      "memory_used": [],
+      "project_ref": "bcvacwoofvygdmxbqsaq",
+      "reason": null,
+      "region": "ap-northeast-2",
+      "served_by": "supabase-edge-runtime-1.69.22 (compatible with Deno v2.1.4)",
+      "timestamp": "2025-11-07T07:41:02.616Z",
+      "version": "32"
+    }
+  ],
+  "timestamp": 1762501262616000
+}

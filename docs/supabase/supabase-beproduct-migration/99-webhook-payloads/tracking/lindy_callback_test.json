@@ -1,0 +1,33 @@
+{
+  "tracking_url": "https://hk.beproduct.com/activeapparelgroup/Tracking#/Tracking/136625d5-d9cc-4139-8747-d98b85314676/Style/plan/4b7d6906-1413-44bb-bcdd-47b7f9cc5643/setup?useFavorite=true",
+  "folder_id": "136625d5-d9cc-4139-8747-d98b85314676",
+  "plan_id": "4b7d6906-1413-44bb-bcdd-47b7f9cc5643",
+  "dependencies": [
+    {
+      "row_number": 1,
+      "department": "DESIGN",
+      "action_description": "Initial Sketch",
+      "short_description": "Create initial design sketch",
+      "share_with": "Design Team",
+      "page": "Design",
+      "days": 5,
+      "depends_on": null,
+      "duration": 5,
+      "duration_unit": "days",
+      "relationship": "FS"
+    },
+    {
+      "row_number": 2,
+      "department": "DESIGN",
+      "action_description": "Tech Pack Creation",
+      "short_description": "Create technical specifications",
+      "share_with": "Tech Team",
+      "page": "TechPack",
+      "days": 3,
+      "depends_on": "1",
+      "duration": 3,
+      "duration_unit": "days",
+      "relationship": "FS"
+    }
+  ]
+}
